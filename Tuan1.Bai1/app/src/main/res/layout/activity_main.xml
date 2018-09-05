@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="So a:" />
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="So b:" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+
+    <Button
+        android:id="@+id/tong2so"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnTong2So"
+        android:text="Tổng 2 số"
+        />
+    <Button
+        android:id="@+id/hieu2so"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnHieu2So"
+        android:text="Hiệu 2 số"
+        />
+    <Button
+        android:id="@+id/tich2so"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnTich2So"
+        android:text="Tích 2 số"
+        />
+    <Button
+        android:id="@+id/thuong2so"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnThuong2So"
+        android:text="Thương 2 số"
+        />
+    <Button
+        android:id="@+id/gcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="btnGCD"
+        android:text="Ước số chung lớn nhất"
+        />
+    <Button
+        android:id="@+id/thoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Thoát chương trình"
+        />
+
+
+</LinearLayout>

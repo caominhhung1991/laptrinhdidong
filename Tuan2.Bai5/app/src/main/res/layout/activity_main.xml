@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/empId"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Employee ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/empName"
+        android:layout_width="304dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Emplyee Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/empId"
+        app:layout_constraintTop_toBottomOf="@+id/empId" />
+
+    <Button
+        android:id="@+id/btnEnterEmp"
+        android:layout_width="305dp"
+        android:layout_height="47dp"
+        android:onClick="addEmployee"
+        android:text="Enter Employee"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupShift"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupShift" />
+
+    <ListView
+        android:id="@+id/listViewEmployee"
+        android:layout_width="384dp"
+        android:layout_height="325dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnterEmp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupShift"
+        android:layout_width="302dp"
+        android:layout_height="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/empName"
+        app:layout_constraintTop_toBottomOf="@+id/empName">
+
+        <RadioButton
+            android:id="@+id/fulltime"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fulltime" />
+
+        <RadioButton
+            android:id="@+id/partime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Không được để trống"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="96dp"
+        android:ems="10"
+        android:hint="Không được để trống"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tài khoản"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Mật khẩu"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="@+id/editText2" />
+
+    <CheckBox
+        android:id="@+id/luuThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu thông tin"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="251dp"
+        android:layout_height="40dp"
+        android:text="Đăng nhập"
+        android:onClick="signUp"
+        app:layout_constraintStart_toStartOf="@+id/luuThongTin"
+        app:layout_constraintTop_toBottomOf="@+id/luuThongTin" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:text="Thoát"
+        android:onClick="thoat"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</android.support.constraint.ConstraintLayout>
